@@ -1,0 +1,110 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 626736A0
+P 6250 4925
+F 0 "R1" H 6320 4971 50  0000 L CNN
+F 1 "10k" H 6320 4880 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 6180 4925 50  0001 C CNN
+F 3 "~" H 6250 4925 50  0001 C CNN
+	1    6250 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 62674167
+P 6250 5250
+F 0 "#PWR0101" H 6250 5000 50  0001 C CNN
+F 1 "GND" H 6255 5077 50  0000 C CNN
+F 2 "" H 6250 5250 50  0001 C CNN
+F 3 "" H 6250 5250 50  0001 C CNN
+	1    6250 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 6267675B
+P 5850 4375
+F 0 "D2" H 5843 4120 50  0000 C CNN
+F 1 "LED" H 5843 4211 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5850 4375 50  0001 C CNN
+F 3 "~" H 5850 4375 50  0001 C CNN
+	1    5850 4375
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 62677996
+P 5850 4775
+F 0 "D3" H 5843 4520 50  0000 C CNN
+F 1 "LED" H 5843 4611 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5850 4775 50  0001 C CNN
+F 3 "~" H 5850 4775 50  0001 C CNN
+	1    5850 4775
+	-1   0    0    1   
+$EndComp
+Connection ~ 5700 4000
+Wire Wire Line
+	5700 4000 6000 4000
+$Comp
+L Device:LED D1
+U 1 1 62675578
+P 5850 4000
+F 0 "D1" H 5843 3745 50  0000 C CNN
+F 1 "LED" H 5843 3836 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5850 4000 50  0001 C CNN
+F 3 "~" H 5850 4000 50  0001 C CNN
+	1    5850 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 4000 5700 4375
+Wire Wire Line
+	5700 4775 5700 4375
+Connection ~ 5700 4375
+Wire Wire Line
+	6000 4000 6000 4375
+Connection ~ 6000 4000
+Wire Wire Line
+	6000 4375 6000 4775
+Connection ~ 6000 4375
+Wire Wire Line
+	6000 4775 6250 4775
+Connection ~ 6000 4775
+Wire Wire Line
+	6250 5075 6250 5150
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 6267D02F
+P 5300 4100
+F 0 "J1" H 5218 3775 50  0000 C CNN
+F 1 "Conn_01x02" H 5218 3866 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical" H 5300 4100 50  0001 C CNN
+F 3 "~" H 5300 4100 50  0001 C CNN
+	1    5300 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 4000 5700 4000
+Wire Wire Line
+	5500 4100 5500 5150
+Wire Wire Line
+	5500 5150 6250 5150
+Connection ~ 6250 5150
+Wire Wire Line
+	6250 5150 6250 5250
+$EndSCHEMATC
